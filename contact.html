@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ピラティススクール Sano Pilates">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sano Pilates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="index.html"><img src="img/logo.png" alt="Sano Pilates"></a></h1>
+        <div class="flex_right">
+            <nav>
+                <ul>
+                    <li class="menu"><a href="index.html#about">About</a></li>
+                    <li class="menu"><a href="index.html#instructor">Instructor</a></li>
+                    <li class="menu"><a href="index.html#class">Class</a></li>
+                    <li class="menu"><a href="index.html#price">Price</a></li>
+                    <li class="menu"><a href="index.html#access">Access</a></li>
+                </ul>
+            </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="contact_btn"><a href="contact.html">Contact</a></div>
+        </div>
+
+        <div class="mask"></div>
+    </header>
+
+    <main>
+        <section id="contactPage">
+            <div class="wrapper">
+
+                <div class="h2_center">
+                    <h2>Contact</h2>
+                </div>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label>Details</label>
+                    <div class="radio-group">
+                        <label class="item"><input type="radio" name="details" value="inquiry"> お問い合わせ</label>
+                        <label class="item"><input type="radio" name="details" value="reservation"> 体験予約</label>
+                    </div>
+
+                    <label for="reservation-date">Reservation Date</label>
+                    <input type="date" id="reservation-date" name="reservation-date" class="date">
+
+                    <label for="reservation-time">Reservation Time</label>
+                    <input type="time" id="reservation-time" name="reservation-time" class="time">
+
+                    <label for="message">Message</label>
+                    <div class="outline">
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"
+                            alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="img/X.png" alt="X"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                </li>
+            </ul>
+            <p class="copyright"><small>&copy; SANO PILATES</small></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
